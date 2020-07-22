@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+/*common css*/
+.dashboard {
+  padding-top: 30px;
+}
+
+.status,
+.login_form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+/*common css*/
+
+/*body section start*/
+body {
+  background-color: #000;
+}
+
+/*login section start*/
+.login {
+  margin-top: 80px;
+}
+
+.login h1 {
+  padding-bottom: 30px;
+}
+
+.login_form {
+  padding: 40px 80px;
+}
+
+.login_form h3 {
+  padding-bottom: 20px;
+}
+
+.login_form input {
+  margin-bottom: 30px;
+}
+/*login section end*/
+
+/*dashboard section start*/
+.dashboard_status h1 {
+  padding-bottom: 30px;
+}
+
+.deposit,
+.withdraw,
+.current_balance {
+  padding: 20px;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.deposit h4,
+.withdraw h4,
+.current_balance h4 {
+  margin-bottom: 10px;
+}
+
+.deposit p,
+.withdraw p,
+.current_balance p {
+  font-size: 25px;
+}
+
+.deposit {
+  margin-left: 20px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.withdraw {
+  background-color: #fbda61;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+}
+
+.current_balance {
+  background-color: #08aeea;
+  background-image: linear-gradient(135deg, #08aeea 0%, #2af598 100%);
+}
+
+.amount_form {
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.deposit_input h3,
+.withdraw_input h3,
+.deposit_input input,
+.withdraw_input input {
+  margin-bottom: 20px;
+}
+
+.deposit_input,
+.withdraw_input {
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 7px 9px 11px 4px #e5e5e5;
+  background-color: #fff;
+  width: 480px;
+  border: 1px solid #e5e5e5;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.btn {
+  width: 80px;
+  background-color: #23b574;
+  color: #fff;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.dashboard {
+  display: none;
+}
+/*dashboard section end*/
