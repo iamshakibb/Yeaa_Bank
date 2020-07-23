@@ -15,14 +15,38 @@ logInBtn.addEventListener("click", () => {
 });
 // login form disappear and dashboard appear
 
-// add deposit amount
+// this function is for getting the value of deposit and withdraw input .
+function getInput(querySelector) {
+  const val = document.querySelector(querySelector).value;
+  document.querySelector(querySelector).value = "";
+  return Math.floor(val);
+}
+
+//this function is for showing deposit withdraw and currentBalance value.
+function balanceUpdate(querySelector, amount) {
+  const currentAmount = document.querySelector(querySelector).innerText;
+  let totalAmount = Math.floor(currentAmount) + Math.floor(amount);
+  document.querySelector(querySelector).innerText = totalAmount;
+}
+
+// add deposit amount and current amount
 
 const depositBtn = document.querySelector(".deposit_btn");
 
 depositBtn.addEventListener("click", () => {
-  const depositInput = parseFloat(document.querySelector('.amount_form [name="deposit"]').value);
-  const currentAmount = parseFloat(document.querySelector(".deposit span").innerText);
-  let totalAmount = depositInput + currentAmount;
-  document.querySelector(".deposit span").innerText = totalAmount;
-  document.querySelector('.amount_form [name="deposit"]').value = "";
+  depositInput = getInput('.deposit_input [name="deposit"]');
+  balanceUpdate(".deposit span", depositInput);
+  balanceUpdate(".current_balance span", depositInput);
 });
+// add deposit amount and current amount
+
+// withdraw amount
+
+const withdrawBtn = document.querySelector(".withdraw_btn");
+
+withdrawBtn.addEventListener("click", () => {
+  withdrawInput = getInput('.withdraw_input [name="withdraw"]');
+  balanceUpdate(".withdraw span", withdrawInput);
+  balanceUpdate(".current_balance span", -1 * withdrawInput);
+});
+// withdraw amount

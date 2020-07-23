@@ -22,10 +22,6 @@ span {
 }
 
 /*common css*/
-.dashboard {
-  padding-top: 30px;
-}
-
 .status,
 .login_form {
   background-color: #fff;
@@ -62,6 +58,10 @@ body {
 /*login section end*/
 
 /*dashboard section start*/
+.dashboard {
+  padding-top: 30px;
+}
+
 .dashboard_status h1 {
   padding-bottom: 30px;
 }
@@ -138,7 +138,7 @@ input[type="number"] {
 }
 
 .btn {
-  width: 80px;
+  width: 100px;
   background-color: #23b574;
   color: #fff;
 }
